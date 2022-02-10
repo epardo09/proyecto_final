@@ -44,7 +44,7 @@ a{
         padding: 20px;
     }
     .nav-a a:hover {
-        background-color: var(--gris));
+        background-color: var(--gris);
         color: var(--blanco);
       }
     .btn-login{
@@ -140,7 +140,7 @@ a{
     .cuadrado > .cuadrado-login{
         display: flex;
         background-color: var(--azul);
-        width: 350px;
+        width: 300px;
         height: 200px; 
         text-align: center;
         
