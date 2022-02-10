@@ -32,16 +32,20 @@ a{
         justify-content:  space-between;
         padding: 20px;
     }
+    
     h1{
         color:var(--blanco);
     }
+
     a{
         color:var(--blanco);
         padding: 20px;
     }
+
     .nav-a a:hover {
         background-color: var(--gris));
-        color:var(--blanco);
+        c
+        olor:var(--blanco);
       }
     .btn-login{
         background-color: var(--marron);
@@ -72,9 +76,11 @@ a{
     .btn-login:hover{
         background-color: var(--gris);
     }
+
     .imagen_fondo{
         background-image: url(./img/login.webp);
     }
+
 }
 /*desktop*/
 @media only screen and (min-width: 1000px) {
