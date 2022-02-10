@@ -1,6 +1,6 @@
 /* CSS LAYOUT */
 /* **************************************************************** */
-/*header{
+header{
     background-color: var(--negro);
     display: flex;
     align-items: center;
@@ -16,80 +16,11 @@ h1{
 }
 a{
         color:var(--blanco);
-    }*/
-    header{
-        background-color: var(--negro);
-        display: flex;
-        padding: 15px;
     }
-
-    nav{
-        
-        justify-content:  space-between;
-        padding: 20px;
-    }
-
-    h1{
-
-        color: var(--blanco);
-    }
-    
-    h2 {
-        text-align: center;
-      }
-    
-    a{
-        color:var(--blanco);
-        padding: 20px;
-    }
-    
-    div{
-        margin: .4em 0;
-    }
-    div label{
-        width: 25%;
-        float: left;
-    }
-        
-    
-    .btn-login{
-        background-color: var(--marron);
-        width: 100px;
-        height:50px;
-        cursor: pointer;
-        
-    }
-
-    .btn-login:hover{
-        background-color: var(--gris);
-    }
-
-    .cuadrado {
-       
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        height: 500px;
-        flex-direction: column;
-    }
-    .cuadrado > .cuadrado-login{
-        display: flex;
-        background-color: var(--azul);
-        width: 350px;
-        height: 200px; 
-        text-align: center;
-        
-    }
-    .btn-login-a{
-        color: var(--negro);
-        
-    }
-    
-
+   
     .imagen_fondo{
         background-image: url(../img/login.webp);
     }
-
 
 
 /*ipad*/
