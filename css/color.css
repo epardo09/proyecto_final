@@ -1,2 +1,9 @@
 /* CSS COLOR */
 /* **************************************************************** */
+:root {
+    --marron: #C99B7A;
+    --blanco: #ffffff;
+    --negro:  black;
+    --azul:   #59AAA8;
+    --gris:   #E2E1E1;
+  }
