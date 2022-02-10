@@ -11,7 +11,7 @@ nav{
     display: flex;
     justify-content:  space-between;
 }
-h1{
+h2{
     color: var(--blanco);
 }
 a{
@@ -25,7 +25,7 @@ a{
 
 /*ipad*/
 @media only screen and (min-width: 768px) {
-   /* header{
+    header{
         background-color: var(--negro);
         display: flex;
         padding: 15px;
@@ -36,7 +36,7 @@ a{
         justify-content:  space-between;
         padding: 20px;
     }
-    h1{
+    h2{
         color: var(--blanco);
     }
     a{
@@ -79,7 +79,7 @@ a{
     .imagen_fondo{
         background-image: url(./img/login.webp);
     }
-}*/
+}
 /*desktop*/
 @media only screen and (min-width: 1000px) {
     header{
@@ -94,14 +94,15 @@ a{
         padding: 20px;
     }
 
+    h1 {
+        text-align: center;
+      }
+
     h2{
 
         color: var(--blanco);
     }
     
-    h1 {
-        text-align: center;
-      }
     
     a{
         color:var(--blanco);
