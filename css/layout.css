@@ -25,35 +25,45 @@ a{
 
 /*ipad*/
 @media only screen and (min-width: 768px) {
+
+    /*header*/
     header{
-        background-color: var(--negro);
+        background-color: var(--negro);/*fondo de header*/
         display: flex;
         padding: 15px;
       
     }
+
     nav{
         display: flex;
         justify-content:  space-between;
         padding: 20px;
     }
+
+    /*titulo principal de todas las paguinas*/
+    h1 {
+        text-align: center;
+      }
+
+      /*logo de header*/
     h2{
         color: var(--blanco);
     }
+
+    /*todos las enlaces del header*/
     a{
         color:var(--blanco);
         padding: 20px;
     }
-    .nav-a a:hover {
-        background-color: var(--gris);
-        color: var(--blanco);
-      }
+
+    /*boton del login*/
     .btn-login{
         background-color: var(--marron);
         width: 100px;
         height:50px;
         cursor: pointer;
     }
-
+    /*espacio entre el login y el header*/
     .cuadrado {
        
         display: flex;
@@ -62,6 +72,8 @@ a{
         height: 500px;
         flex-direction: column;
     }
+
+    /*login*/
     .cuadrado > .cuadrado-login{
         display: flex;
         background-color: var(--azul);
@@ -73,17 +85,22 @@ a{
         padding: 10px;
     }
 
+    /*boton por encima*/
     .btn-login:hover{
         background-color:var(--gris);
     }
+
+    /*fondo de la pagina*/
     .imagen_fondo{
         background-image: url(./img/login.webp);
     }
 }
 /*desktop*/
 @media only screen and (min-width: 1000px) {
+
+    /*header*/
     header{
-        background-color: var(--negro);
+        background-color: var(--negro);/*fondo de header*/
         display: flex;
         padding: 15px;
     }
@@ -94,16 +111,18 @@ a{
         padding: 20px;
     }
 
+    /*titulo principal de todas las paguinas*/
     h1 {
         text-align: center;
       }
 
+       /*logo de header*/
     h2{
 
         color: var(--blanco);
     }
     
-    
+     /*todos las enlaces del header*/
     a{
         color:var(--blanco);
         padding: 20px;
@@ -117,7 +136,7 @@ a{
         float: left;
     }
         
-    
+    /*boton del login*/
     .btn-login{
         background-color: var(--marron);
         width: 100px;
@@ -125,11 +144,11 @@ a{
         cursor: pointer;
         
     }
-
+    /*boton por encima*/
     .btn-login:hover{
         background-color: var(--gris);
     }
-
+ /*espacio entre el login y el header*/
     .cuadrado {
        
         display: flex;
@@ -138,6 +157,8 @@ a{
         height: 500px;
         flex-direction: column;
     }
+
+     /*login*/
     .cuadrado > .cuadrado-login{
         display: flex;
         background-color: var(--azul);
@@ -146,12 +167,13 @@ a{
         text-align: center;
         
     }
+    /*color del boton registro para la letra en negro*/
     .btn-login-a{
         color: var(--negro);
         
     }
     
-
+    /*fondo */
     .imagen_fondo{
         background-image: url(../img/login.webp);
     }
