@@ -43,9 +43,8 @@ a{
     }
 
     .nav-a a:hover {
-        background-color: var(--gris));
-        c
-        olor:var(--blanco);
+        background-color: var(--gris);
+        color:var(--blanco);
       }
     .btn-login{
         background-color: var(--marron);
@@ -118,7 +117,7 @@ a{
         float: left;
     }
         
-    }
+    
     .btn-login{
         background-color: var(--marron);
         width: 100px;
@@ -157,5 +156,5 @@ a{
         background-image: url(../img/login.webp);
     }
 
-
+}
 
