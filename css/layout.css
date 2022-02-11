@@ -176,7 +176,7 @@ a{
     /*fondo */
     .imagen_fondo{
         background-image: url(../img/login.webp);
-        width: 100%;/*prueba*/
+        
     }
 
 }
