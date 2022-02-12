@@ -4,18 +4,19 @@
 /* ****************** */
 /* *** Smartphone *** */
 @media only screen and (min-device-width: 320px) and (orientation: portrait){
+}
     
 /* *************** */
 /* *** Tablet *** */
 /* Vertical */
 @media only screen and (min-device-width: 768px) and (orientation:portrait){
 /*header*/
-
+}
 
 /* Horizontal */
 @media only screen and (min-device-width: 1024px) and (orientation:landscape){
 /*header*/
-
+}
 
 /* **************** */
 /* *** Desktop *** */
