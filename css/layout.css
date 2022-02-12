@@ -79,8 +79,8 @@
     /*fondo de la pagina*/
     .imagen_fondo{
         background-image: url(../img/ipad/login.webp);
-        width: 100%;
         height: auto;
+        max-width: 100%;
     }
 }
 /*desktop*/
@@ -164,7 +164,8 @@
     /*fondo */
     .imagen_fondo{
         background-image: url(../img/desktop/login.webp);
-        width: auto;
+        height: auto;
+        max-width: 100%;
         
     }
 
