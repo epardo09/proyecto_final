@@ -175,7 +175,8 @@ a{
     
     /*fondo */
     .imagen_fondo{
-        background-image: url(../img/login.webp);
+        background-image: url(../img/desktop/login.webp);
+        width: auto;
         
     }
 
