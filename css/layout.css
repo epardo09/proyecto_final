@@ -19,7 +19,7 @@ a{
     }
    
     .imagen_fondo{
-        background-image: url(../img/login.webp);
+        background-image: url(../img/movil/login.webp);
     }
 
 
@@ -92,7 +92,7 @@ a{
 
     /*fondo de la pagina*/
     .imagen_fondo{
-        background-image: url(./img/login.webp);
+        background-image: url(./img/ipad/login.webp);
     }
 }
 /*desktop*/
