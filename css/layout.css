@@ -35,7 +35,6 @@ a{
     }
 
     nav{
-        display: flex;
         justify-content:  space-between;
         padding: 20px;
     }
@@ -63,6 +62,25 @@ a{
         height:50px;
         cursor: pointer;
     }
+
+      /*boton por encima*/
+      .btn-login:hover{
+        background-color:var(--gris);
+    }
+
+    .btn-login-a{
+        color: var(--negro);
+        
+    }
+
+    div{
+        margin: .4em 0;
+    }
+    div label{
+        width: 25%;
+        float: left;
+    }
+
     /*espacio entre el login y el header*/
     .cuadrado {
        
@@ -85,10 +103,7 @@ a{
         padding: 10px;
     }
 
-    /*boton por encima*/
-    .btn-login:hover{
-        background-color:var(--gris);
-    }
+  
 
     /*fondo de la pagina*/
     .imagen_fondo{
