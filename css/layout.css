@@ -87,7 +87,15 @@ div label{
     }
 
     /*titulo principal de todas las paguinas*/
-  
+    h1 {
+        text-align: center;
+      }
+
+       /*logo de header*/
+    h2{
+
+        color: var(--blanco);
+    }
 
     /*todos las enlaces del header*/
     a{
