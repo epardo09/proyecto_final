@@ -11,7 +11,16 @@ nav{
     display: flex;
     justify-content:  space-between;
 }
+
+/*titulo principal de todas las paguinas*/
+h1 {
+    text-align: center;
+    font-size: 16px;
+  }
+
+   /*logo de header*/
 h2{
+
     color: var(--blanco);
 }
 a{
