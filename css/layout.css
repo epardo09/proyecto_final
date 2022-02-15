@@ -81,6 +81,7 @@ div label{
 }
 
 
+
 input#click {
     /* Ocultamos el boton en escritorio */
     display: none;
@@ -93,6 +94,9 @@ input#click:checked + nav#menu_interior {
     
 }
 
+label.icono{
+    display: none;
+}
 
 nav#menu_interior ul {
     display: flex;
@@ -125,13 +129,6 @@ a.btn-menu{
 /*menu movil hasta 700 */
 @media all and (max-width: 700px) {
     /* En movil mostramos el botón */
-    
-span{
-
-    color:var(--blanco);
-    
-    
-}
 
     nav#menu_interior {
         display: none;
@@ -173,6 +170,11 @@ span{
         color: var(--blanco);
         background-color: var(--negro);
      }
+
+     label.icono{
+        display: block;
+    }
+   
     }
 /*ipad*/
 @media only screen and (min-width: 768px) {
