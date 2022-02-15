@@ -123,7 +123,7 @@ a.btn-menu{
     background-color: rgb(42, 104, 104); 
  }
  
-/*menu movil hasta 700 mas de va*/
+/*menu movil hasta 700 */
 @media all and (max-width: 700px) {
     /* En movil mostramos el botón */
     button#menu {
@@ -164,7 +164,7 @@ a.btn-menu{
     nav#menu_interior a:hover {
         background-color: var(--gris); 
      }
-    nav#menu_interior  li a.btn-menu {
+    nav#menu_interior li a.btn-menu {
         
         color: var(--blanco);
         background-color: var(--negro);
