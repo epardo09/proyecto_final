@@ -81,15 +81,14 @@ div label{
 }
 
 
-button#menu {
+input#click {
     /* Ocultamos el boton en escritorio */
     display: none;
 }
 
-button#menu:focus + nav#menu_interior {
-    /* Si es pulsado el boton, mostramos el nav.
-    Esto lo puedo hacer porque adquiere el foco.
-    Solo funcionará, si el botón y el menú esta a la misma altura. */
+
+input#click:checked + nav#menu_interior {
+    
     display: block;
     
 }
@@ -126,9 +125,14 @@ a.btn-menu{
 /*menu movil hasta 700 */
 @media all and (max-width: 700px) {
     /* En movil mostramos el botón */
-    button#menu {
-        display: block;
-    }
+    
+span{
+
+    color:var(--blanco);
+    
+    
+}
+
     nav#menu_interior {
         display: none;
         position: absolute;
@@ -170,7 +174,6 @@ a.btn-menu{
         background-color: var(--negro);
      }
     }
-
 /*ipad*/
 @media only screen and (min-width: 768px) {
 
