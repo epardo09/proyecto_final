@@ -94,9 +94,10 @@ input#click:checked + nav#menu_interior {
     
 }
 
-label.icono{
+.icono{
     display: none;
 }
+
 
 nav#menu_interior ul {
     display: flex;
