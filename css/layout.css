@@ -79,6 +79,97 @@ div label{
 .imagen_fondo{
     background-image: url(../img/movil/login.webp);
 }
+
+
+button#menu {
+    /* Ocultamos el boton en escritorio */
+    display: none;
+}
+
+button#menu:focus + nav#superior {
+    /* Si es pulsado el boton, mostramos el nav.
+    Esto lo puedo hacer porque adquiere el foco.
+    Solo funcionará, si el botón y el menú esta a la misma altura. */
+    display: block;
+    
+}
+
+
+nav#superior ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#superior ul a {
+    display: block;
+    width: 8em;
+    text-decoration: none;
+    padding: .3em 0;
+    text-align: center;
+    color: var(--blanco);
+   
+    transition: 1s all;
+}
+
+nav#superior ul a:hover {
+    background: rgb(42, 104, 104);
+}
+a.btn-menu{
+    background-color: var(--marron); 
+ }
+ a.btn-menu:hover{
+    background-color: rgb(42, 104, 104); 
+ }
+ 
+/*movil del menu*/
+@media all and (max-width: 700px) {
+    /* En smartphone mostramos el botón */
+    button#menu {
+        display: block;
+    }
+    nav#superior {
+        display: none;
+        position: absolute;
+        top:0;
+        right:  0;
+        width: 100%;
+        height: 100%; 
+        background-color: var(--azul);
+        
+    }
+    nav#superior ul  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 50%;
+        
+    }
+    nav#superior ul li {
+        align-content: center;
+        text-align: center;
+        
+    }
+    nav#superior ul a {
+        
+        flex-grow: 3;
+        color: var(--negro);
+        transition: 1s all;
+        font-size: 26px;
+        align-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    nav#superior a:hover {
+        background-color: var(--gris); 
+     }
+    nav#superior  li a.btn-menu {
+        
+        color: var(--blanco);
+        background-color: var(--negro);
+     }
+
 /*ipad*/
 @media only screen and (min-width: 768px) {
 
