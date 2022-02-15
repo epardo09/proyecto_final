@@ -86,7 +86,7 @@ button#menu {
     display: none;
 }
 
-button#menu:focus + nav#superior {
+button#menu:focus + nav#menu_interior {
     /* Si es pulsado el boton, mostramos el nav.
     Esto lo puedo hacer porque adquiere el foco.
     Solo funcionará, si el botón y el menú esta a la misma altura. */
@@ -95,14 +95,14 @@ button#menu:focus + nav#superior {
 }
 
 
-nav#superior ul {
+nav#menu_interior ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav#superior ul a {
+nav#menu_interior ul a {
     display: block;
     width: 8em;
     text-decoration: none;
@@ -113,7 +113,7 @@ nav#superior ul a {
     transition: 1s all;
 }
 
-nav#superior ul a:hover {
+nav#menu_interior ul a:hover {
     background: rgb(42, 104, 104);
 }
 a.btn-menu{
@@ -123,13 +123,13 @@ a.btn-menu{
     background-color: rgb(42, 104, 104); 
  }
  
-/*movil del menu*/
+/*menu movil hasta 700 mas de va*/
 @media all and (max-width: 700px) {
-    /* En smartphone mostramos el botón */
+    /* En movil mostramos el botón */
     button#menu {
         display: block;
     }
-    nav#superior {
+    nav#menu_interior {
         display: none;
         position: absolute;
         top:0;
@@ -139,19 +139,19 @@ a.btn-menu{
         background-color: var(--azul);
         
     }
-    nav#superior ul  {
+    nav#menu_interior ul  {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         row-gap: 50%;
         
     }
-    nav#superior ul li {
+    nav#menu_interior ul li {
         align-content: center;
         text-align: center;
         
     }
-    nav#superior ul a {
+    nav#menu_interior ul a {
         
         flex-grow: 3;
         color: var(--negro);
@@ -161,10 +161,10 @@ a.btn-menu{
         text-align: center;
         width: 100%;
     }
-    nav#superior a:hover {
+    nav#menu_interior a:hover {
         background-color: var(--gris); 
      }
-    nav#superior  li a.btn-menu {
+    nav#menu_interior  li a.btn-menu {
         
         color: var(--blanco);
         background-color: var(--negro);
