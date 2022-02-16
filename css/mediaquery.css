@@ -137,7 +137,7 @@ div label{
     display: flex;
     background-color: var(--azul);
     width: 300px;
-    height: 200px; 
+    height: 300px; 
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -227,8 +227,8 @@ div label{
 .cuadrado > .cuadrado-login{
     display: flex;
     background-color: var(--azul);
-    width: 300px;
-    height: 200px; 
+    width: 400px;
+    height: 300px; 
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -312,8 +312,8 @@ div label{
     .cuadrado > .cuadrado-login{
         display: flex;
         background-color: var(--azul);
-        width: 300px;
-        height: 200px; 
+        width: 400px;
+        height: 300px; 
         text-align: center;
         
     }
