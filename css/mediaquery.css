@@ -30,6 +30,7 @@
         nav#menu_interior ul li {
             align-content: center;
             text-align: center;
+            background-color: var(--blanco);
             
         }
         nav#menu_interior ul a {
