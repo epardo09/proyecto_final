@@ -13,7 +13,7 @@
         nav#menu_interior {
             display: none;
             position: absolute;
-            top:0;
+            top: 55px;
             right:  0;
             width: 100%;
             height: 100%; 
@@ -42,6 +42,7 @@
             align-content: center;
             text-align: center;
             width: 100%;
+            padding: 20px;
         }
         nav#menu_interior a:hover {
             background-color: var(--gris); 
