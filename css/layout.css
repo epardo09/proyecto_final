@@ -76,6 +76,21 @@ div label{
     justify-content: center;
     padding: 10px;
 }
+
+.cuadrado > .cuadrado-formulario{
+    display: flex;
+    background-color: var(--azul);
+    width: 500px;
+    height: 100%; 
+    text-align: center;
+    
+    justify-content: center;
+    padding: 30px;
+}
+
+div{
+    padding: 30px;
+}
 .imagen_fondo{
     background-image: url(../img/movil/login.webp);
 }
