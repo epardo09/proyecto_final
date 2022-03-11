@@ -2,6 +2,29 @@
 //para la conexion
 include 'conexion.php';
 
+//varibales
+
+
+
+//validaciones texto login y form
+
+function validarTextoF($texto){
+   
+        if (!preg_match("/^[a-zA-ZÀ-ÿ\s]{2,40}$/", $texto)) {
+            header("Location:./paginaPaso.php?error=6");
+           exit;
+        } 
+    
+}
+
+function validarTextoLogin($texto){
+   
+    if (!preg_match("/^[a-zA-ZÀ-ÿ\s]{2,40}$/", $texto)) {
+        header("Location:./paginaPaso.php?error=7");
+       exit;
+    } 
+
+}
 //funcion de registro
 function registro($usuario,$nombre,$apellidos,$correo,$contra,$contra2){
     //conexion
@@ -14,6 +37,9 @@ function registro($usuario,$nombre,$apellidos,$correo,$contra,$contra2){
         exit;
 
     }else{//si no esta vacion
+
+        validarTextoF($nombre);
+        validarTextoF($apellidos);
 
         //hacemos la validacion del correo que este bien
         if (filter_var($correo, FILTER_VALIDATE_EMAIL) === false) {
@@ -115,6 +141,7 @@ function modificacion($nombre,$apellidos,$contra,$sesion){
             }
         }else{//si no esta vacia apellidos
 
+                validarTextoLogin($apellidos);
                 //setencia para apellidos
                 $sql = "UPDATE usuarios SET Apellidos=:apellidos WHERE Usuario=:sesion ";
                 $stmt = $pdo->prepare($sql);
@@ -143,7 +170,7 @@ function modificacion($nombre,$apellidos,$contra,$sesion){
         }      
        
     }else{//si no esta vacio
-
+        validarTextoLogin($nombre);
         //update para nombre
         $sql = "UPDATE usuarios SET Nombre=:nombre WHERE Usuario=:sesion ";
         $stmt = $pdo->prepare($sql);
@@ -170,7 +197,7 @@ function modificacion($nombre,$apellidos,$contra,$sesion){
                 echo "<br> Se ha modificado tu contraseña";
             }
         }else{//si no esta vacia apellidos
-
+            validarTextoLogin($apellidos);
             //update apellidos
             $sql = "UPDATE usuarios SET Apellidos=:apellidos WHERE Usuario=:sesion ";
             $stmt = $pdo->prepare($sql);

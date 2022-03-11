@@ -63,8 +63,18 @@
             case 5:
                 echo "Este usuario no esta registrado";
                 ?>
-                <a href="../login.html">Volver al registro</a> <?php
+                <a href="../login.html">Volver login</a> <?php
                 break;
+            case 6:
+                echo "Solo puedes meter letras en nombre y apellidos";
+                ?>
+                <a href="../formulario.html">Volver al registro</a> <?php
+                break;
+                case 7:
+                    echo "Solo puedes meter letras en nombre y apellidos";
+                    ?>
+                    <a href="./modi.php">Volver a modificar el perfil</a> <?php
+                    break;
             
             case 10:
                 echo "Todo el proceso ha ido correctamente";
