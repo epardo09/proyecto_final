@@ -76,7 +76,24 @@ div label{
     justify-content: center;
     padding: 10px;
 }
-
+.cuadradoPerfil {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 200px;
+    flex-direction: column;
+}
+.cuadradoPerfil > .cuadrado-perfil{
+    display: flex;
+    background-color: whitesmoke;
+    width: 400px;
+    height: 400px; 
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
 
 
 .imagen_fondo{

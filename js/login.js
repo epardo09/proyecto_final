@@ -19,7 +19,7 @@ const validarFormulario = (e) => {
 		
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
-			validarPassword2();
+		
 		break;
 		
 	}
@@ -50,22 +50,3 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-formulario.addEventListener('submit', (e) => {
-	e.preventDefault();
-
-
-	if(campos.usuario && campos.password ){
-		formulario.reset();
-
-		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-		setTimeout(() => {
-			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-		}, 5000);
-
-		document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-			icono.classList.remove('formulario__grupo-correcto');
-		});
-	} else {
-		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-	}
-});
