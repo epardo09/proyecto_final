@@ -20,9 +20,9 @@
             <!--nav-->
             <nav id="menu_interior">
                 <ul>
-                <li><a href="./index.php">Inicio</a></li>
-                  <li> <a href="./propiedad.php">Propiedad</a></li>
-                  <li><a href="./contacto.php">Contacto</a></li> 
+                <li><a href=" ../index.html">Inicio</a></li>
+                  <li> <a href="../propiedad.html">Propiedad</a></li>
+                  <li><a href="../contacto.html">Contacto</a></li> 
                   <!--boton para volver ha su perfil-->
                   <li><a class="btn-menu" href="../login.html" >Login</a></li>
               </ul>
